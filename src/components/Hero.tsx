@@ -53,10 +53,10 @@ export default function Hero() {
         >
           <div className="relative rounded-2xl overflow-hidden backdrop-blur-[10px] bg-[var(--color-glass)] border border-[var(--color-border)] shadow-[0px_20px_40px_-10px_rgba(115,92,0,0.05)]">
             <Image
-              src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&h=800&fit=crop&q=80"
-              alt="High-end beauty makeup look by Devika Mahakumara"
+              src="/images/hero.webp"
+              alt="Devika Mahakumara - Professional Makeup & Costume Artist"
               width={564}
-              height={560}
+              height={564}
               className="w-full h-auto object-cover"
               priority
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 564px"
