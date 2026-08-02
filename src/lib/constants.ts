@@ -55,7 +55,7 @@ export const PORTFOLIO_CATEGORIES = ["All", "Bridal", "Fashion"] as const;
 export const PORTFOLIO_IMAGES = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1560577091-3d3c4279e118?w=800&h=1000&fit=crop&q=80",
+    src: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&h=1000&fit=crop&q=80",
     alt: "Elegant bridal makeup look",
     category: "Bridal",
     span: "col-span-2 row-span-2",
