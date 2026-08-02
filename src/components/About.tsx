@@ -23,6 +23,8 @@ export default function About() {
               alt="Portrait of Devika Mahakumara"
               fill
               className="object-cover"
+              quality={100}
+              unoptimized
               sizes="(max-width: 768px) 100vw, 466px"
             />
           </div>
