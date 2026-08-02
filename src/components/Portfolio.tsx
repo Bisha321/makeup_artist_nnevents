@@ -15,14 +15,14 @@ export default function Portfolio() {
       : PORTFOLIO_IMAGES.filter((img) => img.category === activeCategory);
 
   return (
-    <section id="portfolio" className="px-6 md:px-16 py-24">
+    <section id="portfolio" className="px-6 md:px-16 py-14 lg:py-16">
       <div className="max-w-[1280px] mx-auto flex flex-col gap-12">
         {/* Header */}
         <motion.div
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, amount: 0.3 }}
           className="flex flex-col items-center gap-4"
         >
           <h2 className="font-[family-name:var(--font-heading)] font-medium text-3xl lg:text-[40px] leading-[1.2] text-[var(--color-foreground)] text-center">

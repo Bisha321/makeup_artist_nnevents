@@ -7,14 +7,14 @@ import { STATS } from "@/lib/constants";
 
 export default function About() {
   return (
-    <section id="about" className="px-6 md:px-16 py-24">
+    <section id="about" className="px-6 md:px-16 py-14 lg:py-16">
       <div className="max-w-[1280px] mx-auto grid grid-cols-1 lg:grid-cols-12 gap-6 items-center">
         {/* Image */}
         <motion.div
           variants={slideInLeft}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, amount: 0.3 }}
           className="lg:col-span-5"
         >
           <div className="relative aspect-[464/580] rounded-2xl overflow-hidden backdrop-blur-[10px] bg-[var(--color-glass)] border border-[var(--color-border)] shadow-[0px_20px_40px_-10px_rgba(115,92,0,0.05)]">
@@ -33,7 +33,7 @@ export default function About() {
           variants={slideInRight}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, amount: 0.3 }}
           className="lg:col-span-6 lg:col-start-7 flex flex-col gap-8"
         >
           <h2 className="font-[family-name:var(--font-heading)] font-medium text-3xl lg:text-[40px] leading-[1.2] text-[var(--color-foreground)]">
@@ -52,7 +52,7 @@ export default function About() {
             variants={staggerContainer}
             initial="hidden"
             whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
+            viewport={{ once: true, amount: 0.2 }}
             className="grid grid-cols-2 gap-6 pt-6"
           >
             {STATS.map((stat) => (

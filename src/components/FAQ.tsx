@@ -10,14 +10,14 @@ export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   return (
-    <section id="faq" className="bg-[var(--color-surface)] px-6 md:px-16 py-24">
+    <section id="faq" className="bg-[var(--color-surface)] px-6 md:px-16 py-14 lg:py-16">
       <div className="max-w-[768px] mx-auto flex flex-col gap-16">
         {/* Header */}
         <motion.div
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, amount: 0.3 }}
           className="text-center"
         >
           <h2 className="font-[family-name:var(--font-heading)] font-medium text-3xl lg:text-[40px] leading-[1.2] text-[var(--color-foreground)]">
@@ -30,7 +30,7 @@ export default function FAQ() {
           variants={staggerContainer}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true, amount: 0.2 }}
           className="flex flex-col"
         >
           {FAQ_ITEMS.map((item, index) => (
