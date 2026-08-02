@@ -8,14 +8,75 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center px-6 md:px-16 py-24 overflow-hidden"
+      className="relative min-h-screen flex items-center px-6 md:px-16 pt-28 pb-16 overflow-hidden"
     >
-      {/* Animated Background - subtle gradient */}
-      <div className="absolute inset-0 opacity-40 pointer-events-none">
-        <div className="absolute inset-0 bg-gradient-to-br from-[var(--color-surface)] via-transparent to-[rgba(212,175,55,0.05)]" />
+      {/* Animated Background */}
+      <div className="absolute inset-0 pointer-events-none overflow-hidden">
+        {/* Gradient orbs */}
+        <motion.div
+          className="absolute -top-[20%] -left-[10%] w-[600px] h-[600px] rounded-full bg-gradient-to-br from-[rgba(212,175,55,0.08)] to-[rgba(115,92,0,0.03)] blur-3xl"
+          animate={{
+            x: [0, 30, -20, 0],
+            y: [0, -20, 30, 0],
+            scale: [1, 1.1, 0.95, 1],
+          }}
+          transition={{
+            duration: 20,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+        <motion.div
+          className="absolute -bottom-[10%] -right-[10%] w-[500px] h-[500px] rounded-full bg-gradient-to-tl from-[rgba(212,175,55,0.06)] to-[rgba(208,197,175,0.04)] blur-3xl"
+          animate={{
+            x: [0, -25, 15, 0],
+            y: [0, 25, -15, 0],
+            scale: [1, 0.95, 1.1, 1],
+          }}
+          transition={{
+            duration: 25,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+        <motion.div
+          className="absolute top-[40%] left-[50%] w-[300px] h-[300px] rounded-full bg-gradient-to-r from-[rgba(212,175,55,0.04)] to-transparent blur-2xl"
+          animate={{
+            x: [0, 40, -30, 0],
+            y: [0, -30, 20, 0],
+          }}
+          transition={{
+            duration: 18,
+            repeat: Infinity,
+            ease: "easeInOut",
+          }}
+        />
+
+        {/* Subtle floating particles */}
+        {[...Array(6)].map((_, i) => (
+          <motion.div
+            key={i}
+            className="absolute w-1 h-1 rounded-full bg-[var(--color-gold-accent)]"
+            style={{
+              left: `${15 + i * 15}%`,
+              top: `${20 + (i % 3) * 25}%`,
+              opacity: 0.2,
+            }}
+            animate={{
+              y: [0, -30, 0],
+              opacity: [0.15, 0.35, 0.15],
+            }}
+            transition={{
+              duration: 4 + i * 0.8,
+              repeat: Infinity,
+              ease: "easeInOut",
+              delay: i * 0.5,
+            }}
+          />
+        ))}
       </div>
 
-      <div className="relative max-w-[1280px] mx-auto w-full flex flex-col lg:flex-row items-center gap-6 lg:gap-10">
+      <div className="relative max-w-[1280px] mx-auto w-full flex flex-col lg:flex-row items-center gap-8 lg:gap-10">
         {/* Text Content */}
         <motion.div
           variants={heroTextEntrance}
@@ -47,19 +108,20 @@ export default function Hero() {
           </div>
         </motion.div>
 
-        {/* Hero Image */}
+        {/* Hero Image - fixed with proper width/height and fallback */}
         <motion.div
           variants={heroImageEntrance}
           initial="hidden"
           animate="visible"
           className="flex-1 w-full max-w-[564px]"
         >
-          <div className="relative aspect-[564/560] rounded-2xl overflow-hidden backdrop-blur-[10px] bg-[var(--color-glass)] border border-[var(--color-border)] shadow-[0px_20px_40px_-10px_rgba(115,92,0,0.05)]">
+          <div className="relative rounded-2xl overflow-hidden backdrop-blur-[10px] bg-[var(--color-glass)] border border-[var(--color-border)] shadow-[0px_20px_40px_-10px_rgba(115,92,0,0.05)]">
             <Image
-              src="https://images.unsplash.com/photo-1560577091-3d3c4279e118?w=800&h=800&fit=crop"
+              src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&h=800&fit=crop&q=80"
               alt="High-end beauty makeup look by Devika Mahakumara"
-              fill
-              className="object-cover"
+              width={564}
+              height={560}
+              className="w-full h-auto object-cover"
               priority
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 564px"
             />

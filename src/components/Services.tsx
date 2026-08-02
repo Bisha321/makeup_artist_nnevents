@@ -16,14 +16,14 @@ const iconMap = {
 
 export default function Services() {
   return (
-    <section id="services" className="bg-[var(--color-surface)] px-6 md:px-16 py-24">
+    <section id="services" className="bg-[var(--color-surface)] px-6 md:px-16 py-14 lg:py-16">
       <div className="max-w-[1280px] mx-auto flex flex-col items-center gap-16">
         {/* Header */}
         <motion.div
           variants={fadeUp}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true, amount: 0.3 }}
           className="text-center max-w-[672px]"
         >
           <h2 className="font-[family-name:var(--font-heading)] font-medium text-3xl lg:text-[40px] leading-[1.2] text-[var(--color-foreground)]">
@@ -40,7 +40,7 @@ export default function Services() {
           variants={staggerCards}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
+          viewport={{ once: true, amount: 0.1 }}
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full"
         >
           {SERVICES.map((service) => {

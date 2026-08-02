@@ -7,12 +7,12 @@ import { CONTACT } from "@/lib/constants";
 
 export default function CTA() {
   return (
-    <section id="contact" className="bg-[var(--color-surface)] px-6 md:px-16 py-24">
+    <section id="contact" className="bg-[var(--color-surface)] px-6 md:px-16 py-14 lg:py-16">
       <motion.div
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-100px" }}
+        viewport={{ once: true, amount: 0.3 }}
         className="max-w-[768px] mx-auto"
       >
         <div className="relative flex flex-col items-center gap-6 p-8 sm:p-12 rounded-3xl backdrop-blur-[10px] bg-[var(--color-glass)] border border-[var(--color-border)] shadow-[0px_20px_40px_-10px_rgba(115,92,0,0.05)]">

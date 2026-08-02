@@ -83,12 +83,12 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-[var(--color-surface)] border-t border-[var(--color-border-lighter)] pt-20 pb-12">
+    <footer className="bg-[var(--color-surface)] border-t border-[var(--color-border-lighter)] pt-14 pb-10">
       <motion.div
         variants={fadeUp}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, margin: "-50px" }}
+        viewport={{ once: true, amount: 0.2 }}
         className="max-w-[1280px] mx-auto px-6 md:px-16"
       >
         <div className="grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-8">
@@ -145,29 +145,13 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Legal & Contact Column */}
+          {/* Contact Column */}
           <div className="md:col-span-3 md:col-start-9 flex flex-col gap-6">
             <h4 className="font-[family-name:var(--font-body)] text-base leading-6 text-[var(--color-foreground)] uppercase tracking-[1.6px] pb-2 border-b border-[var(--color-border-light)]">
-              Legal &amp; Contact
+              Contact
             </h4>
             <ul className="flex flex-col gap-3">
               <li>
-                <a
-                  href="/privacy"
-                  className="font-[family-name:var(--font-body)] text-base leading-6 text-[var(--color-text-body)] hover:text-[var(--color-gold-primary)] transition-colors duration-200"
-                >
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/terms"
-                  className="font-[family-name:var(--font-body)] text-base leading-6 text-[var(--color-text-body)] hover:text-[var(--color-gold-primary)] transition-colors duration-200"
-                >
-                  Terms of Service
-                </a>
-              </li>
-              <li className="pt-2">
                 <a
                   href={`mailto:${CONTACT.email}`}
                   className="inline-flex items-center gap-2 font-[family-name:var(--font-body)] text-base leading-6 text-[var(--color-gold-primary)] hover:underline transition-colors duration-200"
