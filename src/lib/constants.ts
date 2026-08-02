@@ -51,39 +51,39 @@ export const SERVICES = [
 /** Portfolio filter categories */
 export const PORTFOLIO_CATEGORIES = ["All", "Bridal", "Fashion"] as const;
 
-/** Portfolio images - using premium placeholder images (easily replaceable) */
+/** Portfolio images - replace these src values with your own images later */
 export const PORTFOLIO_IMAGES = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&h=1000&fit=crop",
+    src: "https://images.unsplash.com/photo-1560577091-3d3c4279e118?w=800&h=1000&fit=crop&q=80",
     alt: "Elegant bridal makeup look",
     category: "Bridal",
     span: "col-span-2 row-span-2",
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&h=400&fit=crop",
+    src: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=600&h=400&fit=crop&q=80",
     alt: "Fashion editorial makeup",
     category: "Fashion",
     span: "col-span-1 row-span-1",
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=1000&fit=crop",
+    src: "https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=600&h=1000&fit=crop&q=80",
     alt: "Glamorous party look",
     category: "Fashion",
     span: "col-span-1 row-span-2",
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=600&h=400&fit=crop",
+    src: "https://images.unsplash.com/photo-1519699047748-de8e457a634e?w=600&h=400&fit=crop&q=80",
     alt: "Natural bridal beauty",
     category: "Bridal",
     span: "col-span-1 row-span-1",
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1503236823255-94609f598e71?w=1200&h=400&fit=crop",
+    src: "https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=1200&h=400&fit=crop&q=80",
     alt: "Creative costume styling",
     category: "Fashion",
     span: "col-span-2 row-span-1",
