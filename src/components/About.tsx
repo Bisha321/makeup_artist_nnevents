@@ -19,7 +19,7 @@ export default function About() {
         >
           <div className="relative aspect-[464/580] rounded-2xl overflow-hidden backdrop-blur-[10px] bg-[var(--color-glass)] border border-[var(--color-border)] shadow-[0px_20px_40px_-10px_rgba(115,92,0,0.05)]">
             <Image
-              src="https://images.unsplash.com/photo-1594744803329-e58b31de8bf5?w=600&h=750&fit=crop"
+              src="/images/IMG10.webp"
               alt="Portrait of Devika Mahakumara"
               fill
               className="object-cover"
