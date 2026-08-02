@@ -51,39 +51,39 @@ export const SERVICES = [
 /** Portfolio filter categories */
 export const PORTFOLIO_CATEGORIES = ["All", "Bridal", "Fashion"] as const;
 
-/** Portfolio images - using premium placeholder images (easily replaceable) */
+/** Portfolio images - replace these with actual portfolio photos */
 export const PORTFOLIO_IMAGES = [
   {
     id: 1,
-    src: "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?w=800&h=1000&fit=crop",
+    src: "/images/hero.webp",
     alt: "Elegant bridal makeup look",
     category: "Bridal",
     span: "col-span-2 row-span-2",
   },
   {
     id: 2,
-    src: "https://images.unsplash.com/photo-1516975080664-ed2fc6a32937?w=600&h=400&fit=crop",
+    src: "/images/IMG10.webp",
     alt: "Fashion editorial makeup",
     category: "Fashion",
     span: "col-span-1 row-span-1",
   },
   {
     id: 3,
-    src: "https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=600&h=1000&fit=crop",
+    src: "/images/hero.webp",
     alt: "Glamorous party look",
     category: "Fashion",
     span: "col-span-1 row-span-2",
   },
   {
     id: 4,
-    src: "https://images.unsplash.com/photo-1457972729786-0411a3b2b626?w=600&h=400&fit=crop",
+    src: "/images/IMG10.webp",
     alt: "Natural bridal beauty",
     category: "Bridal",
     span: "col-span-1 row-span-1",
   },
   {
     id: 5,
-    src: "https://images.unsplash.com/photo-1503236823255-94609f598e71?w=1200&h=400&fit=crop",
+    src: "/images/hero.webp",
     alt: "Creative costume styling",
     category: "Fashion",
     span: "col-span-2 row-span-1",
