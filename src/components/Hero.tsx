@@ -59,6 +59,8 @@ export default function Hero() {
               height={564}
               className="w-full h-auto object-cover"
               priority
+              quality={100}
+              unoptimized
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 564px"
             />
           </div>
