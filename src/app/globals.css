@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: #fcf9f8;
+  --color-foreground: #1c1b1b;
+  --color-gold-primary: #735c00;
+  --color-gold-accent: #d4af37;
+  --color-gold-dark: #554300;
+  --color-text-body: #4d4635;
+  --color-border: #d0c5af;
+  --color-border-light: rgba(208, 197, 175, 0.3);
+  --color-border-lighter: rgba(208, 197, 175, 0.2);
+  --color-border-faint: rgba(208, 197, 175, 0.1);
+  --color-surface: #f6f3f2;
+  --color-glass: rgba(255, 255, 255, 0.7);
+  --color-whatsapp: #25d366;
+
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Outfit", sans-serif;
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Remove default focus outline and add custom */
+*:focus-visible {
+  outline: 2px solid var(--color-gold-primary);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gold-primary);
+}
