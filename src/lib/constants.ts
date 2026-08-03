@@ -97,24 +97,24 @@ export const PORTFOLIO_IMAGES = [
 /** Testimonials data */
 export const TESTIMONIALS = [
   {
-    name: "Sarah Mendis",
+    name: "Nadeesha Perera",
     role: "Bride",
     quote:
-      "Devika made me feel like the most beautiful version of myself on my wedding day. The makeup was flawless and lasted through all the tears and dancing!",
+      "I was so nervous about my wedding day makeup but Devika akka made me feel so relaxed. My makeup lasted from morning poruwa ceremony all the way through the reception — even after all the crying! Everyone kept asking who did my makeup.",
     rating: 5,
   },
   {
-    name: "Elena Rodriguez",
-    role: "Fashion Model",
+    name: "Kavindi Rajapakse",
+    role: "Party Makeup Client",
     quote:
-      "Her editorial eye is unmatched. For our high-fashion shoot, she created a look that was both bold and sophisticated. A true artist.",
+      "Got my makeup done for my best friend's homecoming and I couldn't stop looking at myself the whole night. She really listens to what you want and the end result was exactly what I had in mind. Super friendly and punctual too.",
     rating: 5,
   },
   {
-    name: "Michael Chen",
-    role: "Creative Director",
+    name: "Sanduni Wickramasinghe",
+    role: "Bride",
     quote:
-      "The costume styling and makeup for our production were incredible. Devika's attention to detail and character depth is exceptional.",
+      "Devika did makeup for me and all five of my bridesmaids. She came to our place early morning and finished everyone on time without rushing. The photos came out beautiful — very natural but still glamorous. Highly recommend!",
     rating: 5,
   },
 ] as const;

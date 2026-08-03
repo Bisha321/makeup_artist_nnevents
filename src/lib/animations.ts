@@ -31,7 +31,7 @@ export const scaleIn: Variants = {
 
 /** Slide in from left */
 export const slideInLeft: Variants = {
-  hidden: { opacity: 0, x: -60 },
+  hidden: { opacity: 0, x: -30 },
   visible: {
     opacity: 1,
     x: 0,
@@ -41,7 +41,7 @@ export const slideInLeft: Variants = {
 
 /** Slide in from right */
 export const slideInRight: Variants = {
-  hidden: { opacity: 0, x: 60 },
+  hidden: { opacity: 0, x: 30 },
   visible: {
     opacity: 1,
     x: 0,
@@ -85,7 +85,7 @@ export const heroTextEntrance: Variants = {
 
 /** Hero image entrance */
 export const heroImageEntrance: Variants = {
-  hidden: { opacity: 0, scale: 0.88, x: 50 },
+  hidden: { opacity: 0, scale: 0.88, x: 20 },
   visible: {
     opacity: 1,
     scale: 1,
