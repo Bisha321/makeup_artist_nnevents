@@ -79,12 +79,12 @@ export default function Portfolio() {
           </h2>
 
           {/* Category Filters */}
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center justify-center gap-3">
             {PORTFOLIO_CATEGORIES.map((category) => (
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-6 py-2 rounded-full text-base uppercase tracking-[1.6px] font-[family-name:var(--font-body)] transition-all duration-300 ${
+                className={`px-4 sm:px-6 py-2 rounded-full text-sm sm:text-base uppercase tracking-[1.2px] sm:tracking-[1.6px] font-[family-name:var(--font-body)] transition-all duration-300 ${
                   activeCategory === category
                     ? "bg-[var(--color-gold-accent)] text-[var(--color-gold-dark)]"
                     : "backdrop-blur-[10px] bg-[var(--color-glass)] border border-[var(--color-border)] text-[var(--color-text-body)] hover:border-[var(--color-gold-accent)]"

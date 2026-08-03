@@ -15,7 +15,7 @@ export default function About() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="lg:col-span-5"
+          className="lg:col-span-5 order-2 lg:order-1"
         >
           <div className="relative aspect-[464/580] rounded-2xl overflow-hidden backdrop-blur-[10px] bg-[var(--color-glass)] border border-[var(--color-border)] shadow-[0px_20px_40px_-10px_rgba(115,92,0,0.05)]">
             <Image
@@ -36,7 +36,7 @@ export default function About() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.3 }}
-          className="lg:col-span-6 lg:col-start-7 flex flex-col gap-8"
+          className="lg:col-span-6 lg:col-start-7 flex flex-col gap-8 order-1 lg:order-2"
         >
           <h2 className="font-[family-name:var(--font-heading)] font-medium text-3xl lg:text-[40px] leading-[1.2] text-[var(--color-foreground)]">
             The Art of Elegance
