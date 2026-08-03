@@ -17,6 +17,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.devikamahakumara.online"),
   title: "Devika Mahakumara | Professional Makeup & Costume Artist",
   description:
     "Professional Makeup & Costume Artistry for bridal, party, fashion, and special events. Elevating natural beauty with a touch of quiet luxury.",
@@ -36,14 +37,14 @@ export const metadata: Metadata = {
       "Professional Makeup & Costume Artistry for bridal, party, fashion, and special events.",
     type: "website",
     locale: "en_US",
-    url: "https://devikamahakumara.com",
-    siteName: "Devika Mahakumara",
+    url: "https://www.devikamahakumara.online",
+    siteName: "Salon Tharushi",
     images: [
       {
-        url: "https://devikamahakumara.com/images/portfolio/OG_IMG.webp",
-        width: 1536,
-        height: 1024,
-        alt: "Devika Mahakumara - Professional Makeup & Costume Artist",
+        url: "https://www.devikamahakumara.online/images/portfolio/OG_IMG.webp",
+        width: 1200,
+        height: 630,
+        alt: "Salon Tharushi",
         type: "image/webp",
       },
     ],
@@ -53,7 +54,9 @@ export const metadata: Metadata = {
     title: "Devika Mahakumara | Professional Makeup & Costume Artist",
     description:
       "Professional Makeup & Costume Artistry for bridal, party, fashion, and special events.",
-    images: ["https://devikamahakumara.com/images/portfolio/OG_IMG.webp"],
+    images: [
+      "https://www.devikamahakumara.online/images/portfolio/OG_IMG.webp",
+    ],
   },
   robots: {
     index: true,
@@ -72,7 +75,7 @@ export default function RootLayout({
     name: "Devika Mahakumara",
     description:
       "Professional Makeup & Costume Artistry for bridal, party, fashion, and special events.",
-    url: "https://devikamahakumara.com",
+    url: "https://www.devikamahakumara.online",
     telephone: "0764154407",
     email: "dewikamahakumara29@gmail.com",
     address: {
