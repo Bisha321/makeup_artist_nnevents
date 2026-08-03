@@ -146,31 +146,68 @@ export default function Footer() {
           </div>
 
           {/* Contact Column */}
-          <div className="md:col-span-3 md:col-start-9 flex flex-col gap-6">
+          <div className="md:col-span-4 md:col-start-9 flex flex-col gap-6">
             <h4 className="font-[family-name:var(--font-body)] text-base leading-6 text-[var(--color-foreground)] uppercase tracking-[1.6px] pb-2 border-b border-[var(--color-border-light)]">
               Contact
             </h4>
-            <ul className="flex flex-col gap-3">
-              <li>
-                <a
-                  href={`mailto:${CONTACT.email}`}
-                  className="inline-flex items-center gap-2 font-[family-name:var(--font-body)] text-base leading-6 text-[var(--color-gold-primary)] hover:underline transition-colors duration-200"
+            <ul className="flex flex-col gap-5">
+              {/* Mobile */}
+              <li className="flex items-start gap-3">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--color-gold-primary)"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="shrink-0 mt-0.5"
                 >
-                  <svg
-                    width="12"
-                    height="10"
-                    viewBox="0 0 12 10"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="1.5"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <div className="flex flex-col">
+                  <span className="font-[family-name:var(--font-body)] text-sm text-[var(--color-text-body)] uppercase tracking-wider">
+                    Mobile
+                  </span>
+                  <a
+                    href={`tel:${CONTACT.phone}`}
+                    className="font-[family-name:var(--font-body)] text-base text-[var(--color-gold-primary)] hover:underline"
                   >
-                    <path d="M1 1L6 5.5L11 1" />
-                    <rect x="0.5" y="0.5" width="11" height="9" rx="1" />
-                  </svg>
-                  {CONTACT.email}
-                </a>
+                    {CONTACT.phone}
+                  </a>
+                </div>
+              </li>
+
+              {/* Address */}
+              <li className="flex items-start gap-3">
+                <svg
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="var(--color-gold-primary)"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="shrink-0 mt-0.5"
+                >
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <div className="flex flex-col">
+                  <span className="font-[family-name:var(--font-body)] text-sm text-[var(--color-text-body)] uppercase tracking-wider">
+                    Address
+                  </span>
+                  <p className="font-[family-name:var(--font-body)] text-base leading-6 text-[var(--color-foreground)]">
+                    Salon Tharushi
+                  </p>
+                  <p className="font-[family-name:var(--font-body)] text-sm leading-5 text-[var(--color-text-body)]">
+                    416/16A, Pincowattha,<br />
+                    Waliweriya,<br />
+                    Sri Lanka.
+                  </p>
+                </div>
               </li>
             </ul>
           </div>
