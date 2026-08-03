@@ -41,11 +41,11 @@ export const metadata: Metadata = {
     siteName: "Salon Tharushi",
     images: [
       {
-        url: "https://www.devikamahakumara.online/images/portfolio/OG_IMG.webp",
+        url: "https://www.devikamahakumara.online/images/portfolio/OG_IMG_NEW.png",
         width: 1200,
         height: 630,
-        alt: "Salon Tharushi",
-        type: "image/webp",
+        alt: "Devika Mahakumara – Makeup Artist & Costume Designer",
+        type: "image/png",
       },
     ],
   },
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
     description:
       "Professional Makeup & Costume Artistry for bridal, party, fashion, and special events.",
     images: [
-      "https://www.devikamahakumara.online/images/portfolio/OG_IMG.webp",
+      "https://www.devikamahakumara.online/images/portfolio/OG_IMG_NEW.png",
     ],
   },
   robots: {
