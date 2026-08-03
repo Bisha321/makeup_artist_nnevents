@@ -40,7 +40,7 @@ export default function SalonLocation() {
           >
             <Image
               src="/images/portfolio/Salon.webp"
-              alt="Salon Tharushi - Professional beauty salon"
+              alt="Salon Devika - Professional beauty salon"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -76,7 +76,7 @@ export default function SalonLocation() {
                   </svg>
                 </div>
                 <h3 className="font-[family-name:var(--font-heading)] font-medium text-2xl text-[var(--color-foreground)]">
-                  Salon Tharushi
+                  Salon Devika
                 </h3>
               </div>
 
@@ -143,7 +143,7 @@ export default function SalonLocation() {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Salon Tharushi location on Google Maps"
+                title="Salon Devika location on Google Maps"
               />
             </div>
           </motion.div>

@@ -200,7 +200,7 @@ export default function Footer() {
                     Address
                   </span>
                   <p className="font-[family-name:var(--font-body)] text-base leading-6 text-[var(--color-foreground)]">
-                    Salon Tharushi
+                    Salon Devika
                   </p>
                   <p className="font-[family-name:var(--font-body)] text-sm leading-5 text-[var(--color-text-body)]">
                     416/16A, Pincowattha,<br />

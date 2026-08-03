@@ -38,7 +38,7 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "https://www.devikamahakumara.online",
-    siteName: "Salon Tharushi",
+    siteName: "Salon Devika",
     images: [
       {
         url: "https://www.devikamahakumara.online/images/portfolio/OG_IMG_NEW.jpg",
