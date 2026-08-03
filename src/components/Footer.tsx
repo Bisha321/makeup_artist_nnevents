@@ -68,10 +68,10 @@ function TikTokIcon({ size = 20 }: { size?: number }) {
 }
 
 const socialLinks = [
-  { platform: "Facebook", href: "https://facebook.com", icon: FacebookIcon },
-  { platform: "Instagram", href: "https://instagram.com", icon: InstagramIcon },
-  { platform: "YouTube", href: "https://youtube.com", icon: YoutubeIcon },
-  { platform: "TikTok", href: "https://tiktok.com", icon: TikTokIcon },
+  { platform: "Facebook", href: "https://www.facebook.com", icon: FacebookIcon },
+  { platform: "Instagram", href: "https://www.instagram.com", icon: InstagramIcon },
+  { platform: "YouTube", href: "https://www.youtube.com", icon: YoutubeIcon },
+  { platform: "TikTok", href: "https://www.tiktok.com", icon: TikTokIcon },
 ];
 
 export default function Footer() {
@@ -182,7 +182,16 @@ export default function Footer() {
             &copy; 2024 Devika Mahakumara. All rights reserved.
           </p>
           <p className="font-[family-name:var(--font-body)] text-sm leading-5 text-[var(--color-text-body)]">
-            Designed by FortXcore.
+            Designed by{" "}
+            <a
+              href="https://www.fortxcore.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[var(--color-gold-primary)] hover:underline"
+            >
+              FortXcore
+            </a>
+            .
           </p>
         </div>
       </motion.div>
