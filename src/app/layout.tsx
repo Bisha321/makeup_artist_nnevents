@@ -38,12 +38,22 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://devikamahakumara.com",
     siteName: "Devika Mahakumara",
+    images: [
+      {
+        url: "https://devikamahakumara.com/images/portfolio/OG_IMG.webp",
+        width: 1536,
+        height: 1024,
+        alt: "Devika Mahakumara - Professional Makeup & Costume Artist",
+        type: "image/webp",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Devika Mahakumara | Professional Makeup & Costume Artist",
     description:
       "Professional Makeup & Costume Artistry for bridal, party, fashion, and special events.",
+    images: ["https://devikamahakumara.com/images/portfolio/OG_IMG.webp"],
   },
   robots: {
     index: true,
