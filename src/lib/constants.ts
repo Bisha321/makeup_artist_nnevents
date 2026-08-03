@@ -56,7 +56,6 @@ export const PORTFOLIO_IMAGES = [
   { id: 1, src: "/images/portfolio/portfolio-01.webp", alt: "Bridal makeup look", category: "Bridal" },
   { id: 2, src: "/images/portfolio/portfolio-02.webp", alt: "Bridal elegance", category: "Bridal" },
   { id: 3, src: "/images/portfolio/portfolio-03.webp", alt: "Fashion editorial", category: "Fashion" },
-  { id: 4, src: "/images/portfolio/portfolio-04.webp", alt: "Professional beauty shoot", category: "Fashion" },
   { id: 5, src: "/images/portfolio/portfolio-05.webp", alt: "Bridal glam look", category: "Bridal" },
   { id: 6, src: "/images/portfolio/portfolio-06.webp", alt: "Salon styling", category: "Fashion" },
   { id: 7, src: "/images/portfolio/portfolio-07.webp", alt: "Bridal makeup artistry", category: "Bridal" },
