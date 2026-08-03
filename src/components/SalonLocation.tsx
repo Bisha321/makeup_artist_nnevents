@@ -39,7 +39,7 @@ export default function SalonLocation() {
             className="relative aspect-[4/3] lg:aspect-auto rounded-2xl overflow-hidden backdrop-blur-[10px] bg-[var(--color-glass)] border border-[var(--color-border)] shadow-[0px_20px_40px_-10px_rgba(115,92,0,0.05)]"
           >
             <Image
-              src="/images/salon.webp"
+              src="/images/portfolio/Salon.webp"
               alt="Salon Tharushi - Professional beauty salon"
               fill
               className="object-cover"
